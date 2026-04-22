@@ -1,0 +1,12 @@
+/* App-level layout styles */
+
+/* Ensure the page fills the full viewport height */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
