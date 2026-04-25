@@ -1,14 +1,17 @@
 import { useState, useEffect } from 'react';
 
 // Logo SVG inline – lightweight, no extra file needed
-const LogoIcon = () => (
-  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <circle cx="16" cy="16" r="15" fill="#1a6b3c" />
-    {/* Simplified drill bit icon */}
-    <rect x="14" y="6" width="4" height="14" rx="2" fill="#fff" />
-    <polygon points="14,20 18,20 16,26" fill="#e8a030" />
-    <circle cx="16" cy="11" r="2" fill="#e8a030" />
-  </svg>
+// Logo Image
+const Logo = () => (
+  <img 
+    src="/logo.jpg" 
+    alt="Khelcom Forage Logo" 
+    style={{ 
+      width: 'auto', 
+      height: '40px', 
+      objectFit: 'contain' 
+    }} 
+  />
 );
 
 /**
@@ -60,7 +63,7 @@ function Navbar({ activePage, onNavigate }) {
           aria-label="Aller à l'accueil"
           style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
         >
-          <LogoIcon />
+          <Logo />
           <span style={{ fontWeight: 800, fontSize: '1.1rem', color: 'var(--color-primary)', letterSpacing: '-0.02em' }}>
             Khelcom <span style={{ color: 'var(--color-secondary)' }}>Forage</span>
           </span>

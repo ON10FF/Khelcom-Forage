@@ -10,29 +10,29 @@
 // --- Data ---
 const strengths = [
   {
-    icon: '🏆',
-    title: 'Expérience reconnue',
-    desc: 'Des années d\'expertise dans le forage d\'eau et les sondages géotechniques sur l\'ensemble du territoire sénégalais.',
+    icon: '🇸🇳',
+    title: 'Couverture nationale',
+    desc: 'Intervention partout au Sénégal, des zones urbaines aux localités les plus reculées.',
   },
   {
-    icon: '⚙️',
-    title: 'Matériel adapté',
-    desc: 'Équipements modernes et adaptés aux conditions africaines, capables d\'intervenir dans des terrains variés.',
+    icon: '⚡',
+    title: 'Réactivité',
+    desc: 'Devis sous 48h, planification rapide et exécution efficace de vos chantiers.',
   },
   {
-    icon: '📍',
-    title: 'Proximité locale',
-    desc: 'Basés à Dakar, nous intervenons rapidement dans la région et comprenons les réalités du terrain.',
+    icon: '🌍',
+    title: 'Expertise locale',
+    desc: 'Connaissance approfondie des nappes phréatiques et des sols sénégalais.',
   },
   {
-    icon: '✅',
-    title: 'Fiabilité garantie',
-    desc: 'Respect des délais, transparence dans les devis et suivi rigoureux de chaque chantier jusqu\'à la livraison.',
+    icon: '🛡️',
+    title: 'Garantie',
+    desc: 'Travaux garantis et service après-vente assuré pour une tranquillité d\'esprit totale.',
   },
 ];
 
 const zones = [
-  'Dakar', 'Thiès', 'Rufisque', 'Mbour', 'Touba', 'Saint-Louis', 'Ziguinchor', 'Tambacounda',
+  'Dakar', 'Thiès', 'Ziguinchor', 'Kaolack', 'Saint-Louis', 'Et partout ailleurs',
 ];
 
 function Home({ onNavigate }) {
@@ -118,8 +118,7 @@ function Home({ onNavigate }) {
                 letterSpacing: '-0.02em',
               }}
             >
-              Khelcom Forage –<br />
-              <span style={{ color: 'var(--color-accent)' }}>Forage &amp; Sondage</span> à Dakar
+              L'eau, où que vous soyez au Sénégal.
             </h1>
 
             <p
@@ -129,11 +128,11 @@ function Home({ onNavigate }) {
                 fontSize: 'clamp(1rem, 2.5vw, 1.15rem)',
                 lineHeight: 1.7,
                 marginBottom: '2.25rem',
-                maxWidth: '560px',
+                maxWidth: '620px',
               }}
             >
-              Forage d'eau, sondages géotechniques et travaux spécialisés adaptés au contexte africain.
-              Votre partenaire de confiance pour des solutions durables.
+              Khelcom Forage intervient partout au Sénégal pour forer, équiper et entretenir vos puits et forages. 
+              Des solutions fiables pour les ménages, les entreprises, les agriculteurs et les collectivités.
             </p>
 
             <div
@@ -171,9 +170,8 @@ function Home({ onNavigate }) {
               }}
             >
               {[
-                { value: '10+', label: 'Ans d\'expérience' },
                 { value: '200+', label: 'Forages réalisés' },
-                { value: '8', label: 'Régions couvertes' },
+                { value: 'Toutes les régions', label: 'Régions couvertes' },
               ].map(stat => (
                 <div key={stat.label}>
                   <div style={{ color: 'var(--color-accent)', fontSize: '1.8rem', fontWeight: 800, lineHeight: 1 }}>{stat.value}</div>
@@ -244,20 +242,18 @@ function Home({ onNavigate }) {
         style={{
           background: 'linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%)',
           color: '#fff',
+          padding: '4rem 0',
         }}
       >
         <div className="container" style={{ textAlign: 'center' }}>
           <p style={{ color: 'rgba(255,255,255,0.7)', fontWeight: 600, fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
-            Zones d'intervention
+            Partout au Sénégal
           </p>
-          <h2 style={{ color: '#fff', fontSize: 'clamp(1.5rem, 3.5vw, 2rem)', fontWeight: 800, marginBottom: '0.75rem' }}>
-            Nous intervenons dans toute la région
+          <h2 style={{ color: '#fff', fontSize: 'clamp(1.5rem, 3.5vw, 2rem)', fontWeight: 800, marginBottom: '2rem' }}>
+            Nous intervenons là où vous êtes
           </h2>
-          <p style={{ color: 'rgba(255,255,255,0.75)', marginBottom: '2.5rem', maxWidth: '500px', margin: '0 auto 2.5rem' }}>
-            De Dakar aux régions éloignées, nos équipes se déplacent pour vous servir.
-          </p>
-
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', justifyContent: 'center', marginBottom: '2.5rem' }}>
+ 
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'center', marginBottom: '2.5rem' }}>
             {zones.map(zone => (
               <span
                 key={zone}
@@ -265,17 +261,18 @@ function Home({ onNavigate }) {
                   background: 'rgba(255,255,255,0.15)',
                   border: '1px solid rgba(255,255,255,0.25)',
                   borderRadius: '50px',
-                  padding: '0.45rem 1.1rem',
-                  fontSize: '0.9rem',
-                  fontWeight: 500,
+                  padding: '0.6rem 1.5rem',
+                  fontSize: '1rem',
+                  fontWeight: 600,
                   backdropFilter: 'blur(4px)',
+                  color: '#fff',
                 }}
               >
                 📍 {zone}
               </span>
             ))}
           </div>
-
+ 
           <button
             id="zones-cta"
             onClick={handleDevisClick}
@@ -284,6 +281,73 @@ function Home({ onNavigate }) {
           >
             Demandez un devis gratuit
           </button>
+        </div>
+      </section>
+
+      {/* ========================
+          INTERVENTION ZONES
+         ======================== */}
+      {/* ========================
+          SECONDARY CATCHPHRASE
+         ======================== */}
+      <section className="section" style={{ background: 'var(--color-light-gray)' }}>
+        <div className="container">
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '3rem', alignItems: 'center' }}>
+            <div style={{ borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
+              <img src="/images/action-water.jpg" alt="Eau jaillissant d'un forage Khelcom" style={{ width: '100%', height: 'auto', display: 'block' }} />
+            </div>
+            <div>
+              <h2 style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.2rem)', fontWeight: 800, color: 'var(--color-dark)', marginBottom: '1.5rem', lineHeight: 1.3 }}>
+                Votre eau ne devrait pas dépendre de la distance. <span style={{ color: 'var(--color-primary)' }}>Nous la trouvons là où elle est.</span>
+              </h2>
+              <p style={{ color: 'var(--color-gray)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '2rem' }}>
+                Khelcom Forage accompagne les particuliers, les exploitants agricoles et les institutions dans l'accès à une eau souterraine de qualité. 
+                Rapidité d'intervention, équipements modernes, résultats garantis.
+              </p>
+              <button onClick={handleDevisClick} className="btn btn-primary">En savoir plus</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ========================
+          TESTIMONIALS
+         ======================== */}
+      <section id="temoignages" className="section" style={{ background: '#fff' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '3.5rem' }}>
+            <p style={{ color: 'var(--color-primary)', fontWeight: 600, fontSize: '0.875rem', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '0.5rem' }}>
+              Témoignages
+            </p>
+            <h2 className="section-title">Ils nous font confiance</h2>
+          </div>
+
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem' }}>
+            {[
+              {
+                text: "Grâce à Khelcom Forage, notre village dispose désormais d'eau toute l'année. L'équipe a été professionnelle du premier au dernier jour.",
+                author: "Chef de village",
+                location: "Région de Fatick",
+                img: "/images/villagers-watching.jpg"
+              },
+              {
+                text: "Nous avions essayé deux autres entreprises avant eux. Khelcom Forage est la seule qui a trouvé l'eau et livré dans les délais annoncés.",
+                author: "Exploitant agricole",
+                location: "Région de Kaolack",
+                img: "/images/villagers-site.jpg"
+              }
+            ].map((t, i) => (
+              <div key={i} className="card" style={{ padding: '0', overflow: 'hidden' }}>
+                <img src={t.img} alt="Chantier de forage" style={{ width: '100%', height: '200px', objectFit: 'cover' }} />
+                <div style={{ padding: '1.5rem' }}>
+                  <div style={{ color: 'var(--color-accent)', fontSize: '1.5rem', marginBottom: '0.5rem' }}>"</div>
+                  <p style={{ color: 'var(--color-dark)', fontStyle: 'italic', marginBottom: '1.5rem', lineHeight: 1.6 }}>{t.text}</p>
+                  <div style={{ fontWeight: 700, color: 'var(--color-primary)' }}>{t.author}</div>
+                  <div style={{ fontSize: '0.85rem', color: 'var(--color-gray)' }}>{t.location}</div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

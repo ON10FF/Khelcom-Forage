@@ -34,7 +34,8 @@ function Footer({ onNavigate }) {
               Khelcom <span style={{ color: 'var(--color-accent)' }}>Forage</span>
             </h2>
             <p style={{ fontSize: '0.875rem', lineHeight: 1.7 }}>
-              Entreprise spécialisée dans le forage d'eau, les sondages géotechniques et les travaux publics en Afrique.
+              "L'eau, partout, pour tous."<br />
+              Spécialiste du forage hydraulique au Sénégal : nous forons, vous buvez.
             </p>
           </div>
 
@@ -92,7 +93,7 @@ function Footer({ onNavigate }) {
                 <a href="tel:+221767816262" style={{ color: '#94a3b8', transition: 'color 0.2s' }}
                   onMouseEnter={e => e.target.style.color = '#fff'}
                   onMouseLeave={e => e.target.style.color = '#94a3b8'}>
-                  📞 76 781 62 62
+                  📞 78 838 20 20
                 </a>
               </li>
               <li style={{ color: '#94a3b8' }}>

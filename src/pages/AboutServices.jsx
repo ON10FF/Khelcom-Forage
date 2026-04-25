@@ -4,34 +4,29 @@
 
 const services = [
   {
-    icon: '💧',
-    title: 'Forage d\'eau',
-    desc: 'Forage de puits et forages d\'eau potable pour particuliers, collectivités et projets agricoles. Garantie de rendement et analyse de la nappe phréatique.',
+    icon: '🕳️',
+    title: 'Forage de puits',
+    desc: 'Nous réalisons des forages profonds adaptés à votre terrain et à vos besoins. Qu\'il s\'agisse d\'un usage domestique ou industriel, nos équipes interviennent avec du matériel performant et une expertise du sol sénégalais.',
+  },
+  {
+    icon: '🚰',
+    title: 'Équipement et pompage',
+    desc: 'Nous équipons votre forage de A à Z pour une distribution efficace et durable, même dans les zones les plus reculées.',
+  },
+  {
+    icon: '🛠️',
+    title: 'Entretien et réhabilitation',
+    desc: 'Un forage existant qui ne produit plus suffisamment ? Nous diagnostiquons, nettoyons et réhabilitons vos installations pour leur redonner une pleine capacité.',
   },
   {
     icon: '🔬',
-    title: 'Sondages géotechniques',
-    desc: 'Études de sol et sondages géotechniques pour la construction de bâtiments, routes, ponts et ouvrages. Rapports détaillés conformes aux normes.',
+    title: 'Analyse de l\'eau',
+    desc: 'Nous prélevons et analysons la qualité de l\'eau de votre forage pour garantir une eau potable et conforme aux normes en vigueur.',
   },
   {
-    icon: '⚡',
-    title: 'Installation de pompes',
-    desc: 'Fourniture et installation de pompes solaires, immergées et manuelles, adaptées aux conditions locales et aux ressources énergétiques disponibles.',
-  },
-  {
-    icon: '🏗️',
-    title: 'Travaux publics',
-    desc: 'Réalisation de travaux de terrassement, fondations spéciales, drainage et aménagements liés à l\'eau pour les projets de génie civil.',
-  },
-  {
-    icon: '📐',
-    title: 'Études de terrain',
-    desc: 'Prospection hydrogéologique, cartographie des ressources en eau souterraine et recommandations techniques pour l\'implantation des ouvrages.',
-  },
-  {
-    icon: '🔧',
-    title: 'Maintenance & SAV',
-    desc: 'Service après-vente, maintenance préventive et curative des installations de pompage et des équipements de forage.',
+    icon: '📊',
+    title: 'Études hydrogéologiques',
+    desc: 'Avant chaque chantier, nous réalisons une étude du sous-sol pour identifier les meilleures zones de captage et maximiser le rendement de votre forage.',
   },
 ];
 
@@ -88,14 +83,13 @@ function AboutServices({ onNavigate }) {
               <h2 className="section-title">Mission &amp; valeurs</h2>
 
               <p style={{ color: 'var(--color-gray)', lineHeight: 1.8, marginBottom: '1.25rem' }}>
-                Khelcom Forage est une entreprise sénégalaise spécialisée dans le forage d'eau et les sondages géotechniques,
-                implantée au cœur de Dakar depuis sa création. Notre équipe d'ingénieurs et de techniciens chevronnés
-                met son expertise au service des particuliers, des communes et des entreprises.
+                Khelcom Forage est une entreprise sénégalaise spécialisée dans le forage hydraulique. 
+                Implantée au Sénégal et fière de ses racines, notre mission est simple : garantir l'accès à l'eau pour tous, 
+                des quartiers urbains aux villages les plus isolés.
               </p>
               <p style={{ color: 'var(--color-gray)', lineHeight: 1.8, marginBottom: '2rem' }}>
-                Notre mission est simple : fournir un accès fiable à l'eau et des études de sol de qualité,
-                dans le respect des populations locales et de l'environnement. Chaque projet est pour nous
-                une opportunité de contribuer au développement durable de l'Afrique.
+                Avec une équipe expérimentée, des équipements à la pointe et une connaissance approfondie du terrain sénégalais, 
+                nous concrétisons chaque projet avec sérieux et engagement.
               </p>
 
               {/* Values */}
@@ -115,8 +109,8 @@ function AboutServices({ onNavigate }) {
             {/* Image */}
             <div style={{ borderRadius: 'var(--radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
               <img
-                src="/services.png"
-                alt="Installation de pompe à eau par l'équipe Khelcom Forage"
+                src="/images/drilling-machine.jpg"
+                alt="Équipe Khelcom Forage en plein travail de forage"
                 loading="lazy"
                 style={{ width: '100%', height: 'auto', display: 'block' }}
               />
